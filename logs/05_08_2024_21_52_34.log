@@ -1,0 +1,129 @@
+[ 2024-05-08 21:52:37,633 ] 160 numexpr.utils - INFO - NumExpr defaulting to 4 threads.
+[ 2024-05-08 21:52:42,429 ] 485 waitress - INFO - Serving on http://[::]:8080
+[ 2024-05-08 21:52:42,429 ] 485 waitress - INFO - Serving on http://0.0.0.0:8080
+[ 2024-05-08 21:53:07,842 ] 57 root - INFO - Dataframe created successfully
+[ 2024-05-08 21:53:08,095 ] 57 root - INFO - Dataframe created successfully
+[ 2024-05-08 21:53:12,452 ] 57 root - INFO - Dataframe created successfully
+[ 2024-05-08 21:53:12,459 ] 57 root - INFO - Dataframe created successfully
+[ 2024-05-08 21:53:22,920 ] 10 root - INFO - Exception Occured in load_object function utils
+[ 2024-05-08 21:53:22,920 ] 26 root - INFO - Exception occured in prediction
+[ 2024-05-08 21:53:22,921 ] 10 root - INFO - Exception Occured in load_object function utils
+[ 2024-05-08 21:53:22,921 ] 1744 app - ERROR - Exception on /predict [POST]
+Traceback (most recent call last):
+  File "d:\data science\data science project\diamond price predication\src\utils\load.py", line 8, in load_object
+    return pickle.load(file_obj)
+           ^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'sklearn.ensemble._gb_losses'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\data science\data science project\diamond price predication\src\pipelines\predication_pipeline.py", line 17, in predict
+    model = load_object(model_path)
+            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\data science\data science project\diamond price predication\src\utils\load.py", line 11, in load_object
+    raise CustomException(e,sys)
+src.exception.CustomException: No module named 'sklearn.ensemble._gb_losses'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\dell\anaconda3\Lib\site-packages\flask\app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\anaconda3\Lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\anaconda3\Lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\anaconda3\Lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\data science\data science project\diamond price predication\app.py", line 31, in predict
+    pred = predict_pipeline.predict(final_new_data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\data science\data science project\diamond price predication\src\pipelines\predication_pipeline.py", line 27, in predict
+    raise CustomException(e,sys)
+src.exception.CustomException: No module named 'sklearn.ensemble._gb_losses'
+[ 2024-05-08 21:53:22,922 ] 26 root - INFO - Exception occured in prediction
+[ 2024-05-08 21:53:22,924 ] 1744 app - ERROR - Exception on /predict [POST]
+Traceback (most recent call last):
+  File "d:\data science\data science project\diamond price predication\src\utils\load.py", line 8, in load_object
+    return pickle.load(file_obj)
+           ^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'sklearn.ensemble._gb_losses'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\data science\data science project\diamond price predication\src\pipelines\predication_pipeline.py", line 17, in predict
+    model = load_object(model_path)
+            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\data science\data science project\diamond price predication\src\utils\load.py", line 11, in load_object
+    raise CustomException(e,sys)
+src.exception.CustomException: No module named 'sklearn.ensemble._gb_losses'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\dell\anaconda3\Lib\site-packages\flask\app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\anaconda3\Lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\anaconda3\Lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\anaconda3\Lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\data science\data science project\diamond price predication\app.py", line 31, in predict
+    pred = predict_pipeline.predict(final_new_data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\data science\data science project\diamond price predication\src\pipelines\predication_pipeline.py", line 27, in predict
+    raise CustomException(e,sys)
+src.exception.CustomException: No module named 'sklearn.ensemble._gb_losses'
+[ 2024-05-08 21:53:35,696 ] 57 root - INFO - Dataframe created successfully
+[ 2024-05-08 21:53:35,704 ] 57 root - INFO - Dataframe created successfully
+[ 2024-05-08 21:53:35,708 ] 10 root - INFO - Exception Occured in load_object function utils
+[ 2024-05-08 21:53:35,708 ] 26 root - INFO - Exception occured in prediction
+[ 2024-05-08 21:53:35,709 ] 1744 app - ERROR - Exception on /predict [POST]
+Traceback (most recent call last):
+  File "d:\data science\data science project\diamond price predication\src\utils\load.py", line 8, in load_object
+    return pickle.load(file_obj)
+           ^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'sklearn.ensemble._gb_losses'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\data science\data science project\diamond price predication\src\pipelines\predication_pipeline.py", line 17, in predict
+    model = load_object(model_path)
+            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\data science\data science project\diamond price predication\src\utils\load.py", line 11, in load_object
+    raise CustomException(e,sys)
+src.exception.CustomException: No module named 'sklearn.ensemble._gb_losses'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\dell\anaconda3\Lib\site-packages\flask\app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\anaconda3\Lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\anaconda3\Lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\anaconda3\Lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\data science\data science project\diamond price predication\app.py", line 31, in predict
+    pred = predict_pipeline.predict(final_new_data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\data science\data science project\diamond price predication\src\pipelines\predication_pipeline.py", line 27, in predict
+    raise CustomException(e,sys)
+src.exception.CustomException: No module named 'sklearn.ensemble._gb_losses'
